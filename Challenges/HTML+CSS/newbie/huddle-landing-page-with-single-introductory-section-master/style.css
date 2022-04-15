@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+--Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--Violet);
+    background-image: url("images/bg-desktop.svg");
+    background-size: cover;
+    padding: 63px 94px 38px 75px ;
+}
+section{
+    width: 1265px;
+    height: 500px;
+    display: flex;
+    margin: 103px 0 25px 0;
+}
+section .image{
+    width: 695px;
+    height: 494px;
+}
+section .text{
+    padding: 47px 0 0 64px;
+}
+section .text h1{
+    width: 433px;
+    font-size: 39px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+section .text p{
+    color: white;
+    margin-top: 31px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 515px;
+}
+section .text button{
+    width: 200px;
+    height: 55px;
+    background-color: white;
+    color: var(--Violet);
+    margin-top: 34px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 1px 2px 7px  black;
+    cursor: pointer;
+}
+section .text button:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+.social{
+    height: 42px;
+    width: 100%;
+    text-align: right;
+}
+
+i{
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+    padding-top: 8px;
+    size: 3px;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 19px;
+    cursor: pointer;
+}
+i:hover{
+    color: var(--Soft-Magenta);
+    border-color: var(--Soft-Magenta);
+}
+@media (min-width:750px) and (max-width:900px){
+    .container{
+        height: 1600px;
+        background-image: url(images/bg-mobile.svg);
+        background-position: top;
+        background-size: contain;
+        padding: 76px 73px 79px 78px;
+        background-repeat: no-repeat; 
+        position: relative;
+     }
+        section{
+            width: 590px;
+            height: 1080px;
+            flex-direction: column;
+            margin: 103px 0 0 0;
+            text-align: center;
+        }
+    section .image ,section img{
+        height: 418px;
+        width: 590px;
+    }
+    section .text{
+        padding: 138px 0 0 0;
+    }
+    section .text h1{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section .text p{
+        font-size: 29px;
+        margin: 54px 39px 50px 0;
+        line-height: 1.5;
+    }
+    section .text button{
+        height: 80px;
+        width: 400px;
+        font-size: 23px;
+    }
+    .social{
+        margin-top:125px ;
+        text-align: center;
+    }
+}

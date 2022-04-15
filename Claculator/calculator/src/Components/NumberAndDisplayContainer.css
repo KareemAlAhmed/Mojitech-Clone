@@ -1,0 +1,11 @@
+.NumberAndDisplayContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #00131c;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}

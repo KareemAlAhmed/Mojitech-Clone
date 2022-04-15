@@ -1,0 +1,8 @@
+.container{
+    max-width: 100%;
+    min-height: 50vh;
+    padding: 5px 15px;
+    background-color: white;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 0.2);
+    color: #646970;
+}

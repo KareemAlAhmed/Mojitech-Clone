@@ -1,0 +1,30 @@
+.Note{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+} 
+.noteOptions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+#trush{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.noteText{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.finished{
+    text-decoration: line-through;
+}
+.finishedDiv{
+    background-color: #f2d675;
+}

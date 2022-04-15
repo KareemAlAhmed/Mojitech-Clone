@@ -1,0 +1,1 @@
+Chrome extension that can copy the text inside a video and paste it where ever i want 

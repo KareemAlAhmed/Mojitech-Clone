@@ -1,0 +1,32 @@
+.input{
+    width: 200px;
+    height: 30px;
+    display: block;
+    border: none;
+    background-color: black;
+    color:black;
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+}
+.input:hover{
+    background-color: brown;
+}
+.submit{
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 100px;
+    padding: 8px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: brown;
+    color: black;
+}
+

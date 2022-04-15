@@ -1,0 +1,80 @@
+.infoAndOptions{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 32vw;
+    min-height: 100vh;
+    background-color: #00000070;
+    padding:  0 60px 50px;
+}
+.searchingBar{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.searchInput{
+    width: 100%;
+}
+.input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid  #ffffff75;
+    font-size: 16px;
+    width: 80%;
+    color: #ffffff75;
+    padding-bottom: 5px;
+}
+.searchButton{
+    background-color: cadetblue;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.searchBtn{
+    width: 25px;
+    height: 25px;
+}
+.otherLocation{
+    padding: 50px 50px 30px 0 ;
+    border-bottom: 1px solid  #ffffff75;
+}
+.otherLocation ul{
+    list-style: none;
+    color: #ffffff75;
+    font-size: 16px;
+}
+.otherLocation ul li{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.weatherDetails{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    color: white;
+    border-bottom: 1px solid  #ffffff75;
+}
+.weatherTitle{
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.weatherOption{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-weight: 200;
+
+}
+.weatherOption .name{
+    color: #ffffff75;
+    font-weight: 400;
+}

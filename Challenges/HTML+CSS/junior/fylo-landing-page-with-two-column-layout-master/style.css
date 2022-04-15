@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+    --Desaturated-Blue: hsl(238, 22%, 44%);
+    --Bright-Blue: hsl(224, 93%, 58%);
+    --Moderate-Cyan: hsl(170, 45%, 43%);
+    --Light-Grayish-Blue: hsl(240, 75%, 98%);
+    --Light-Gray: hsl(0, 0%, 75%);
+}
+/*
+font-family: 'Raleway', sans-serif;    heading 400 700
+font-family: 'Open Sans', sans-serif;  font-weight: 400;
+*/
+.container{
+    width: 100%;
+    height: 2335px;
+    padding: 65px 79px 72px;
+}
+nav{
+    width: 100%;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 87px;
+}
+nav ul{
+    list-style: none;;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 56px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--Very-Dark-Blue);
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.row1{
+    width: 100%;
+    height: 470px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 280px;
+}
+.row1 img{
+    width: 634px;
+    height: 470px;
+}
+.row1 .text1{
+    margin-bottom: 45px;
+}
+.row1 .text1 h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 23px;
+}
+.row1 .text1 p{
+    width: 575px;
+    height: 65px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.row1 .text1 .login{
+    width: 100%;
+    height: 46px;
+    display: flex;
+    gap: 17px;
+}
+.row1 .text1 .login .email_input{
+    width: 320px;
+    height: 100%;
+    background-color: white;
+    padding: 19px 21px 10px;
+    border-radius: 4px; 
+}
+.row1 .text1 .login .email_input::placeholder{
+    font-size: 16px;
+    color: var(--Light-Gray);
+    font-family: 'Raleway', sans-serif;    
+    font-weight: 400; 
+}
+.row1 .text1 .login .submit{
+    width: 200px;
+    height: 100%;
+    background-color: var(--Bright-Blue);
+    color: var(--Light-Grayish-Blue);
+    font-family: 'Raleway', sans-serif;    
+    font-weight: 700; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+}
+.row1 .text1 .login .submit:hover{
+    opacity: 0.5;
+}
+.row2{
+    width: 1440px;
+    height: 644px;
+    position: relative;
+    background-color: hsl(240deg 75% 98% / 73%);
+    padding: 0 79px;
+    left: -79px;
+    display: flex;
+    gap: 78px;
+}
+.row2::before{
+    content: "";
+    height: 114px;
+    width: 1440px;
+    position: absolute;
+    left: 0;
+    top: -114px;
+    background-image: url("images/bg-curve-desktop.svg");
+}
+.row2 .text2{
+    margin-top: 45px;
+    width: 662px;
+    height: 492px;
+}
+.row2 .text2 h1{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 23px;
+}
+.row2 img{
+    margin-top: 60px;
+    width: 545px;
+    height: 413px;
+}
+.row2 .text2 .first_text{
+    width: 521px;
+    height: 42px;
+    margin-bottom: 21px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.row2 .text2 .second_text{
+    width: 526px;
+    height: 44px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.row2 .text2 .work_flow{
+    width: 169px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    border-bottom: 2px solid var(--Moderate-Cyan);
+    margin-bottom: 45px;
+}
+.row2 .text2 .work_flow:hover{
+    opacity: 0.5;
+}
+.row2 .text2 .work_flow a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;    
+    font-weight: 400;
+    color: var(--Moderate-Cyan);
+}
+
+.row2 .text2 .work_flow img{
+    width: 14px;
+    height: 14px;
+    margin: 0;
+}
+.row2 .text2 .kyle_Burton{
+    width: 358px;
+    height: 218px;
+    padding: 26px 41px 28px 34px;
+    box-shadow: 1px 3px 16px 2px var(--Light-Gray);
+}
+.row2 .text2 .kyle_Burton img{
+    width: 12px;
+    height: 12px;
+    margin: 0 0 11px 0;
+}
+.row2 .text2 .kyle_Burton p{
+    width: 292px;
+    height: 79px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 21px;
+}
+.row2 .text2 .kyle_Burton .id{
+    width: 137px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.row2 .text2 .kyle_Burton .id img{
+    width: 31px;
+    height: 31px;
+    border-radius: 100px;
+    margin: 0;
+}
+.row2 .text2 .kyle_Burton .id p{
+    font-size: 12px;
+    width: 96px;
+    height: 24px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;    
+    font-weight: 700;
+}
+.row2 .text2 .kyle_Burton .id span{
+    font-size: 9px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    width: 100px;
+    color: var(--Very-Dark-Blue);
+}
+.row3{
+    height: 322px;
+    width: 1440px;
+    background-color: var(--Desaturated-Blue);
+    transform: translateX(-79px);
+    padding: 112px 121px 87px 79px;
+    display: flex;
+    gap: 242px;
+}
+.row3 .text3{
+    width: 519px;
+    height: 126px;
+}
+.row3 h1{
+    font-size: 33px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    color: var(--Light-Grayish-Blue);
+    height: 32px;
+}
+.row3 p{
+    width: 521px;
+    height: 67px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: var(--Light-Grayish-Blue);
+    line-height: 1.4;
+}
+.row3 .login2{
+    width: 481px;
+    height: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.row3 .login2 .email_input{
+    width: 100%;
+    height: 50px;
+}
+.row3 .login2 .email_input{
+    width: 100%;
+    height: 50px;
+}
+.row3 .login2  .email_input::placeholder{
+    font-size: 14px;
+    color: var(--Light-Gray);
+    font-family: 'Raleway', sans-serif;    
+    font-weight: 400; 
+    padding: 17px 25px;
+}
+.row3 .login2 .submit{
+    width: 200px;
+    height: 50px;
+    background-color: var(--Bright-Blue);
+    color: var(--Light-Grayish-Blue);
+    font-family: 'Raleway', sans-serif;    
+    font-weight: 700; 
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer;
+}
+.row3 .login2 .submit:hover{
+    opacity: 0.5;
+}
+footer{
+    background-color: var(--Very-Dark-Blue);
+    width: 1440px;
+    height: 416px;
+    transform: translateX(-79px);
+    padding: 106px 261px 71px 79px;
+    color: var(--Light-Grayish-Blue);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+footer .logo2{
+    filter: invert(100%) sepia(64%) saturate(1522%) hue-rotate(
+    186deg) brightness(108%) contrast(99%);
+    margin-bottom: 25px;
+}
+footer .more_info{
+    width: 1100px;
+    height: 140px;
+    display: flex;
+}
+footer .more_info .contact{
+    width: 225px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    margin-right: 217px;
+}
+footer .more_info .contact .phone,footer .more_info .contact .email{
+    display: flex;
+    gap: 17px;
+}
+footer .blogs,footer .rules{
+    line-height: 2.5;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-right: 200px;
+    cursor: pointer;
+}
+footer .blogs:hover,footer .rules:hover{
+    color: var(--Desaturated-Blue);
+}
+footer .rules{
+    height: 95px;
+    margin-right: 185px;
+}
+footer i{
+    border: 2px solid white;
+    padding: 7px;
+    height: 32px;
+    width: 32px;
+    margin-right: 5px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+footer i:hover{
+    color: var(--Bright-Blue);
+    border-color: var(--Bright-Blue);
+}
+@media (min-width:750px) and (max-width:850px){
+    .container{
+        width: 750px;
+        height: 5668px;
+        padding: 50px 47px 92px;
+    }
+    nav{
+        width: 654px;
+        height: 52px;
+        margin-bottom: 197px;
+    }
+    .row1{
+        width: 630px;
+        height: 1218px;
+        flex-direction: column;
+        gap: 100px;
+        margin-bottom: 376px;
+    }
+    .row1 img{
+        width: 634px;
+        height: 470px;
+        
+    }
+    .row1 .text1{
+        margin-bottom: 45px;
+        order: 2;
+        text-align: center;
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center;
+    }
+    .row1 .text1 h1{
+        font-size: 51px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.5;
+        margin-bottom: 23px;
+        width: 638px;
+        margin-bottom: 65px;
+    }
+    .row1 .text1 p{
+        width: 568px;
+        height: 156px;
+        font-size: 28px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        margin-bottom: 66px;
+        margin-left: 23px;
+    }
+    .row1 .text1 .login{
+        width: 614px;
+        height: 192px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+    .row1 .text1 .login .email_input{
+        width: 610px;
+        height: 80px;
+        padding: 32px 41px 24px;
+        border-radius: 4px; 
+    }
+    .row1 .text1 .login .email_input::placeholder{
+        font-size: 27px;
+        color: var(--Light-Gray);
+        font-family: 'Raleway', sans-serif;    
+        font-weight: 400; 
+    }
+    .row1 .text1 .login .submit{
+        width: 609px;
+        height: 80px;
+        font-size: 27px;
+    }
+    .row2{
+        width: 570px;
+        height: 633px;
+        position: relative;
+        background-color: hsl(240deg 75% 98% / 73%);
+        padding: 0 79px;
+        left: -79px;
+        display: flex;
+        flex-direction: column;
+        gap: 78px;
+    }
+    .row2::before{
+        content: "";
+        height: 53px;
+        width: 750px;
+        position: absolute;
+        left: 0;
+        top: -53px;
+        background-image: url("images/bg-curve-mobile.svg");
+    }
+    .row2 .text2{
+        margin-top: 45px;
+        width: 662px;
+        height: 492px;
+    }
+    .row2 .text2 h1{
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.5;
+        margin-bottom: 23px;
+    }
+    .row2 img{
+        margin-top: 60px;
+        width: 545px;
+        height: 413px;
+    }
+    .row2 .text2 .first_text{
+        width: 521px;
+        height: 42px;
+        margin-bottom: 21px;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    .row2 .text2 .second_text{
+        width: 526px;
+        height: 44px;
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+    .row2 .text2 .work_flow{
+        width: 169px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        border-bottom: 2px solid var(--Moderate-Cyan);
+        margin-bottom: 45px;
+    }
+    .row2 .text2 .work_flow:hover{
+        opacity: 0.5;
+    }
+    .row2 .text2 .work_flow a{
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;    
+        font-weight: 400;
+        color: var(--Moderate-Cyan);
+    }
+    
+    .row2 .text2 .work_flow img{
+        width: 14px;
+        height: 14px;
+        margin: 0;
+    }
+    .row2 .text2 .kyle_Burton{
+        width: 358px;
+        height: 218px;
+        padding: 26px 41px 28px 34px;
+        box-shadow: 1px 3px 16px 2px var(--Light-Gray);
+    }
+    .row2 .text2 .kyle_Burton img{
+        width: 12px;
+        height: 12px;
+        margin: 0 0 11px 0;
+    }
+    .row2 .text2 .kyle_Burton p{
+        width: 292px;
+        height: 79px;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-bottom: 21px;
+    }
+    .row2 .text2 .kyle_Burton .id{
+        width: 137px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+    .row2 .text2 .kyle_Burton .id img{
+        width: 31px;
+        height: 31px;
+        border-radius: 100px;
+        margin: 0;
+    }
+    .row2 .text2 .kyle_Burton .id p{
+        font-size: 12px;
+        width: 96px;
+        height: 24px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Raleway', sans-serif;    
+        font-weight: 700;
+    }
+    .row2 .text2 .kyle_Burton .id span{
+        font-size: 9px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        width: 100px;
+        color: var(--Very-Dark-Blue);
+    }
+}

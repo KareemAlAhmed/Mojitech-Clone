@@ -1,0 +1,77 @@
+.NumbersAndOperator{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, calc( ( 100% - 20px )/ 5));
+    grid-template-columns: repeat(4, calc( ( 100% - 15px ) / 4));
+    grid-template-areas: 
+    "clear clear c divide"
+    "seven eight nine multi"
+    "four five sex minus"
+    "one two three adding"
+    "Zero1 dot1 equal equal";
+    gap: 5px;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: #4f94d4;
+    font-size: 18px;
+    color:  black;
+    border: none;
+    outline: none;
+}
+.clear{
+    grid-area: clear;
+}
+.c{
+    grid-area: c;
+}
+.division{
+    grid-area: divide;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.x{
+    grid-area: multi;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.sex{
+    grid-area: sex;
+}
+.minus{
+    grid-area: minus;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.adding{
+    grid-area: adding;
+}
+.zero{
+    grid-area: Zero1;
+}
+.dot{
+    grid-area: dot1;
+}
+.equal{
+    grid-area: equal;
+}

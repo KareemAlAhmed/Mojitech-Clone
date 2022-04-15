@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    Font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}  
+:root{
+    --Pale-Violet: hsl(276, 100%, 81%); /* (sub-heading at the top of the app UI)*/
+    --Moderate-Violet : hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet : hsl(271, 15%, 43%);
+    --Grayish-Blue: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet : hsl(271, 36%, 24%);/*(main heading)*/
+    --Dark-Grayish-Violet : hsl(270, 7%, 64%);/*(paragraph)*/
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet : hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet : hsl(271, 36%, 24%);
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+/*font-weight:400 500 700;*/
+.container{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+.container::before{
+    content: "";
+    width: 480px;
+    height: 700px;
+    position: absolute;
+    left: -60px;
+    top: 0;
+    background-image: linear-gradient(to bottom ,hsl(293, 100%, 63%) ,hsl(264, 100%, 61%) ); 
+    border-bottom-left-radius: 262px;
+    border-bottom-right-radius: 367px;
+}
+.container::after{
+    content:"";
+    width: 395px;
+    height: 682px;
+    position: absolute;
+    right: -70px;
+    bottom: 0;
+    background-color: var(--Light-Grayish-Violet);
+    border-top-left-radius: 234px;
+    border-top-right-radius: 118px;
+}
+.box{
+    width: 813px;
+    height: 505px;
+    position: absolute;
+    left: 363px;
+    bottom: 146px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+}
+.phone{
+    width: 247px;
+    height: 505px;
+    border-top:11px solid var(--White);
+    border-bottom:10px solid var(--White);
+    border-left:10px solid var(--White);
+    border-right:10px solid var(--White);
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 17px 21px 45px 1px var(--Grayish-Blue);
+    margin-right: 122px;
+}
+.phone .id{
+    width: 227px;
+    height: 66px;
+    background-image: linear-gradient(to right,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    position: relative;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 29px 0 12px 15px;
+}
+.phone .id::before{
+    content: "";
+    width: 130px;
+    height: 18px;
+    background-color: var(--White);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.phone .id img{
+    width: 22px;
+    height: 22px;
+    border: 1px solid var(--White);
+    border-radius: 100px;
+}
+.phone .id p{
+    display: flex;
+    flex-direction: column;
+    font-size: 8px;
+    /* gap: 6px; */
+    color: hsl(0deg 0% 100% / 50%);
+}
+.phone .id p span{
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--White);
+    
+}
+.phone .messages{
+    width: 227px;
+    height: 418px;
+    background-color: var(--Light-Grayish-Violet);
+    display: flex;
+    flex-direction: column;
+    padding: 11px 7px 8px 8px ;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.phone .messages .first_message,
+.phone .messages .second_message{
+    width: 128px;
+    height: 34px;
+    font-size: 8px;
+    color: var(--Moderate-Violet);
+    background-color: hsl(270deg 7% 64% / 23%);
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border-bottom-left-radius: 4px ;
+    padding: 8px;
+}
+.phone .messages .third_message{
+    display: flex;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 77px;
+    width: 136px;
+    height: 40px;
+    gap: 8px;
+}
+.phone .messages .third_message img{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+}
+.phone .messages .fourth_message,
+.phone .messages .fifth_message{
+    width: 128px;
+    height: 34px;
+    padding: 8px;
+    font-size: 8px;
+    background-color: var(--White);
+    color: var(--Desaturated-Dark-Violet);
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border-bottom-right-radius: 4px;
+}
+.phone .messages .fourth_message{
+    margin-left: 85px;
+}
+.phone .messages .fifth_message{
+    margin-left: 133px;
+    width: 80px;
+    height: 23px;
+}
+.phone .messages .sixth_message{
+    margin-top: 8px;
+    width: 128px;
+    height: 45px;
+    font-size: 8px;
+    color: var(--Moderate-Violet);
+    background-color: hsl(270deg 7% 64% / 23%);
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border-bottom-left-radius: 4px ;
+    padding: 8px;
+}
+.phone .messages .seventh_message,
+.phone .messages .eightth_message{
+    width: 160px;
+    height: 32px;
+    background-image: linear-gradient(to left,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border-bottom-left-radius: 4px ;
+    padding: 8px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    padding: 10px 17px 10px 8px;
+    color: var(--White);
+    position: relative;
+}
+.phone .messages .eightth_message{
+    margin-bottom: 16px;
+}
+.phone .messages .seventh_message .cost1,
+.phone .messages .eightth_message .cost2{
+    font-size: 11px;
+    font-weight: 700;
+    height: 11px;
+}
+.phone .messages .seventh_message .cost1{
+    margin-left: 36px;
+}
+.phone .messages .eightth_message .cost2{
+    margin-left: 51px;
+}
+.phone .messages .seventh_message p,
+.phone .messages .eightth_message p{
+    font-size: 8px;
+    height: 10px;
+    margin-left: 20px;
+}
+.phone .messages .radio{
+    height: 10px;
+    width: 10px;
+    border: 1px solid var(--Very-Light-Magenta) ;
+    background-color: transparent;
+}
+.phone .messages .radio:checked{
+    background-color: beige;
+}
+.container input {
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .checkmark {
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    border: 2px solid var(--Very-Light-Magenta) ;
+  }
+
+.phone .send_message{
+    width: 213px;
+    height: 34px;
+    background-color: var(--White);
+    color: var(--Grayish-Blue);
+    font-size: 9px;
+    padding: 5px 5px 5px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.phone .send_message p{
+    font-size: 9px;
+}
+.phone .send_message .submit_button p{
+    height: 24px;
+    width: 24px;
+    background-color: var(--Very-Dark-Desaturated-Violet);
+    border-radius: 100px;
+    padding: 7px 7px 7px 6px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.box .text{
+
+}
+.box .text h1{
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--Very-Dark-Desaturated-Violet);
+    margin-bottom: 32px;
+}
+.box .text p{
+    font-size: 16px;
+    color: var(--Dark-Grayish-Violet);
+    line-height: 1.6;
+}
+@media (min-width:375px) and (max-width:580px) {
+    .container{
+        width: 100%;
+        height: 936px;
+    }
+    .container::before{
+        width: 247px;
+        height: 500px;
+        left: -60px;
+        top: 0;
+        border-bottom-left-radius: 0;
+    }
+    .container::after{
+        width: 247px;
+        height: 500px;
+        right: -60px;
+        border-top-right-radius: 0;
+    }
+    .box{
+        width: 303px;
+        height: 803px;
+        left: 36px;
+        bottom: 69px;
+        z-index: 3;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .phone{
+        width: 247px;
+        height: 505px;
+        margin-right: 0;
+        margin-bottom: 71px;
+    }
+    .phone .id{
+        width: 227px;
+        height: 66px;
+        background-image: linear-gradient(to right,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+        position: relative;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 29px 0 12px 15px;
+    }
+    .phone .id::before{
+        content: "";
+        width: 130px;
+        height: 18px;
+        background-color: var(--White);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .arrow {
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+    .left {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+    }
+    .phone .id img{
+        width: 22px;
+        height: 22px;
+        border: 1px solid var(--White);
+        border-radius: 100px;
+    }
+    .phone .id p{
+        display: flex;
+        flex-direction: column;
+        font-size: 8px;
+        /* gap: 6px; */
+        color: hsl(0deg 0% 100% / 50%);
+    }
+    .phone .id p span{
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--White);
+        
+    }
+    .phone .messages{
+        width: 227px;
+        height: 418px;
+        background-color: var(--Light-Grayish-Violet);
+        display: flex;
+        flex-direction: column;
+        padding: 11px 7px 8px 8px ;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .phone .messages .first_message,
+    .phone .messages .second_message{
+        width: 128px;
+        height: 34px;
+        font-size: 8px;
+        color: var(--Moderate-Violet);
+        background-color: hsl(270deg 7% 64% / 23%);
+        margin-bottom: 8px;
+        border-radius: 12px;
+        border-bottom-left-radius: 4px ;
+        padding: 8px;
+    }
+    .box .text h1{
+        font-size: 38px;
+        font-weight: 700;
+        color: var(--Very-Dark-Desaturated-Violet);
+        margin-bottom: 32px;
+    }
+    .box .text p{
+        font-size: 16px;
+        color: var(--Dark-Grayish-Violet);
+        line-height: 1.6;
+    }
+    .box .text{
+        text-align: center;
+    }
+}

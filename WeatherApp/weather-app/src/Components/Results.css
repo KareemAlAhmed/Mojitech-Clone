@@ -1,0 +1,55 @@
+
+.results{
+    max-width: 100vw;
+    height: 100vh;
+    padding: 50px 0  100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.Clouds{
+    background-image: url("../assets/rain.jpg");
+}
+.Clear{
+    background-image: url("../assets/Clear.jpg");
+}
+.logo{
+    font-size: 16px;
+    font-weight: 800;
+}
+.finalInfo{
+    display: flex;
+    align-items: center;
+}
+.temp{
+    font-size: 116px;
+    font-weight: 600;
+}
+.location{
+    margin-left: 7px;
+    font-size: 65px;
+    font-weight: 600;
+}
+.weatherSituation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-end;
+    justify-content: center;
+    margin-left: 40px;
+}
+.cloudyIcon{
+    width: 60px;
+    height: 60px;
+    margin-bottom: -7px;
+}
+.weatherName{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
