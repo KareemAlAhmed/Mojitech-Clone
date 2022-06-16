@@ -8,7 +8,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name:'Annouce'
+};
 </script>
 
 <style scoped>
@@ -16,7 +18,7 @@ export default {};
   display: flex;
   background-color: #26a7ca;
   padding: 7px 425px;
-  font-size: 14px;
+  font-size: .75em;
 }
 
 p {

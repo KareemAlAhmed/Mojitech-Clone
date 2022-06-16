@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="headerComponent">
     <div class="logo" style="margin-right: 50px;">
       <slot name="logo"></slot>
     </div>
@@ -29,26 +29,34 @@
         <div style="width:20px;height:20px;margin:0 20px;position:relative;" class="user"><img src="./images/user.png" class="user" style="position: relative;"></div>
         <img src="./images/cart.png" >
     </div>
+     
   </div>
+
 </template>
 
 <script>
 export default {
+  name:'Header',
   data() {
     return {
       show: false,
+      count:0,
+      scrolled:window.scrollY
     };
   },
   methods: {
     change() {
       this.show = !this.show;
     },
+
   },
+ 
+
 };
 </script>
 
 <style scoped>
-.header {
+.headerComponent {
   display: flex;
   align-items: center;
   padding: 0 425px;

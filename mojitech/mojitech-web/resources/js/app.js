@@ -29,6 +29,7 @@ Vue.component('feature-component', require('./components/featureItemComponent.vu
 Vue.component('feature-contact', require('./components/featureAndContact.vue').default);
 Vue.component('more-product', require('./components/moreProduct.vue').default);
 Vue.component('more-product-items', require('./components/moreProductItem.vue').default);
+Vue.component('pop-up', require('./components/popUpHeader.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
