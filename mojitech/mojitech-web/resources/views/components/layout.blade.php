@@ -43,13 +43,13 @@
         .browser:hover{
             color: black;
         }
-        svg{
+        .footer svg{
             width: 40px;
             height: 20px;
             fill: #fff;
             opacity: 0.5;
         }
-        svg:hover{
+        .footer svg:hover{
             opacity: 1;
         }
     </style>
@@ -61,7 +61,7 @@
             <announce-event></announce-event>
             <header-component>
                 <template v-slot:logo>
-                <img src="./storage/thumbnails/2logo-mojitech-1.png">
+                <img src="{{ asset('storage/thumbnails/2logo-mojitech-1.png') }}">
                 </template>
                 <template v-slot:like>
                 <img src="./storage/thumbnails/like.png">
@@ -75,24 +75,20 @@
             </header-component>
             <nav-component></nav-component>
         </div>
-        <preview-display></preview-display>
-        <x-itemPreview :objects="$specialOffers">
-            SPECIAL OFFERS
-        </x-itemPreview>
-        <x-featureItemPreview :featureItems="$featureItems">
-            TODAY'S DEALS
-        </x-featureItemPreview>
-        <x-itemPreview :objects="$specialOffers">
-            LAPTOPS
-        </x-itemPreview>
-        <x-itemPreview :objects="$specialOffers">
-            GAMING DESKTOPS
-        </x-itemPreview>
-        <x-footer></x-footer>
-        <pop-up></pop-up>
+        
+        {{$slot}}
 
+        <x-footer></x-footer>
+        @if(request()->is('/'))
+            <pop-up :helo="1240"></pop-up>
+       
+        @else
+            <pop-up :helo="300"></pop-up>
+        @endif
+        
     </div>
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>

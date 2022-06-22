@@ -7,7 +7,7 @@
     <div class="items" style="display: flex;">
 
         @foreach($featureItems as $item)
-            <feature-component><img src="{{ asset('./storage/thumbnails/feature.jpg') }}"></feature-component>
+            <feature-component><a href="/Product"><img src="{{ asset('./storage/thumbnails/feature.jpg') }}"></a></feature-component>
         @endforeach
     </div>
   

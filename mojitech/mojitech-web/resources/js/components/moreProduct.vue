@@ -50,9 +50,10 @@
     .line{}
     .lineName{
         font-weight: bold;
-        color:#666666;
         padding-bottom: 6px;
         position:relative;
+        line-height: 1.05;
+        letter-spacing: .05em;
     }
     .lineName::after{
         content: '';

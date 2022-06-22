@@ -1,6 +1,6 @@
 <template>
 <div class="show">
-        <div class="headerPopUp" v-show="show" :style="scrolled >= 1240 ? trans : null">
+        <div class="headerPopUp" v-show="show" :style="scrolled >= helo ? trans : null">
         <Annouce />
         <Header >
             <template v-slot:logo>
@@ -22,13 +22,20 @@
             Header,
             NavBar
         },
+        props:{
+            helo:Number
+        }
+            
+        ,
         created () {
             window.addEventListener('scroll', this.handleScroll);
+            console.log(typeof this.helo)
          },
         data() {
             return {
             show: false,
             scrolled:window.scrollY,
+            min:0,
             trans:{
                 transform: 'translateY(230px)'
             }
@@ -37,13 +44,14 @@
         methods: {
             handleScroll (event) {
                 this.scrolled =window.scrollY
-                if(this.scrolled > 1235){
+                this.min = this.helo - 5
+                if(this.scrolled > this.min){
                     this.show = true
                 }
                 if(this.scrolled === 234){
                     this.show = false
                 }
-                console.log(this.scrolled)
+                console.log(this.min)
             }
         },
     }

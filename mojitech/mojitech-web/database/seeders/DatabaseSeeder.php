@@ -2,6 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\BigCategory;
+use App\Models\category1;
+use App\Models\Product;
+use App\Models\SmallCategory;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -14,11 +18,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        // Product::factory(10)->create(['price'=>'600']);
+        // category1::factory(3)->create();
+        SmallCategory::factory(3)->create();
+        $this->call(productSeeder::class);
     }
 }

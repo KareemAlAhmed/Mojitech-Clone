@@ -1,5 +1,4 @@
-@props(["objects"])
-
+@props(['products'])
 <div class="itemPreview " style="margin: 0px 10px;padding:0 425px;margin-bottom: 25px;">
     <div class="itemPreviewContainer" style="display:flex;justify-content:space-between;border-bottom:2px solid rgb(241, 241, 241);margin-bottom: 30px;">
     <!-- <special-offer></special-offer> -->
@@ -7,11 +6,17 @@
         <a href="#" style="text-decoration: none;font-weight:bold;" class="browser hover:text-gray-900">Browse All
         <i class="arrow right" style="  border: solid ;border-width: 0 3px 3px 0;display: inline-block;padding: 3px;  transform: rotate(-45deg);-webkit-transform: rotate(-45deg);"></i></a>
     </div>
-    <div class="items" style="display: flex;">
+        
+<?php 
+$result=[];
+foreach($products as $product){
+    array_push($result,$product);
+}
+$name=request('search')
+?>
 
-        @foreach($objects as $name)
-            <item-component ><img src="{{ asset('./storage/thumbnails/monitor.jpg') }}"></item-component>
-        @endforeach
-    </div>
-  
+
+    <item-component
+    product="{{$name}}"></item-component>
+
 </div>

@@ -1,4 +1,4 @@
-<div class="footer" style="display: flex;flex-direction:column;">
+<div class="footer" style="display: flex;flex-direction:column;border-top: 1px solid rgba(0,0,0,.05);border-top-width: 1px;border-top-style: solid;border-top-color: rgba(0, 0, 0, 0.05);padding-top: 30px;">
 
     <more-product></more-product>
     <feature-contact></feature-contact>

@@ -4,10 +4,10 @@
             <slot></slot>
         </div>
         <div class="information">
-            <a href="#" class="title">DELL G15 SE – I7 16GB RAM 1TB NVME RTX 3060 15.6″</a>
+            <a href="/Product" class="title">DELL G15 SE – I7 16GB RAM 1TB NVME RTX 3060 15.6″</a>
             <p class="price" style="font-weight:bold;font-size: 1.5em;margin: 0.5em 0;">$355.0</p>
             <p class="categorie">Category:<span class="catName">{{Category}}</span></p>
-            <a href="#" class="readmore">READ MORE </a>
+            <a href="/Product" class="readmore">READ MORE </a>
         </div>
     </div>
 </template>

@@ -1,17 +1,35 @@
 <template>
-    <div class="itemComponent">
-        <slot></slot>
-        <span class="categorie">MONITOR</span>
-        <a href="#" class="title">Samsung allienware 144hz AW251HF</a>
-        <p class="price" style="font-weight:bold;">$355.0</p>
+    <div style="display: flex;">
+        <div class="itemComponent" v-for="product in products.data" v-bind:key="product.key">
+            <input type="hidden" value="/Product">          
+            <a :href="'/products/'+product.slug" class="img"><img src="./images/monitor.jpg"></a>
+            <span class="categorie">{{product.category}}</span>
+            <a :href="'/products/'+product.slug" class="title">{{product.name}}</a>
+            <p class="price" style="font-weight:bold;">${{product.price}}</p>
+        </div>
     </div>
 </template>
 
 <script>
     export default {
-        props:{
-            img:URL
-        }
+        props:{product:{type:String}},
+        mounted(){
+                if(this.product != ""){
+                        axios.get('/api/search/'+ this.product)
+                            .then(resources => {this.products = resources.data})
+                            .catch(error => console.log(error))
+                }else{
+                    axios.get('/api/product')
+                        .then(resources => {this.products = resources.data})
+                        .catch(error => console.log(error))
+                }
+        },
+        data(){
+            return{
+                products:[]
+            }
+        },
+        
     }
 </script>
 

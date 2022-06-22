@@ -1,7 +1,7 @@
 <template>
   <div class="headerComponent">
     <div class="logo" style="margin-right: 50px;">
-      <slot name="logo"></slot>
+      <a href="/"><slot name="logo"></slot></a>
     </div>
     <div class="search">
       <div style="position:relative;">
