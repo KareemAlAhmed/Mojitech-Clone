@@ -1,0 +1,104 @@
+body {
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-grow: 1;
+    list-style: none;
+
+}
+
+
+.menu a {
+    background-color: #0b588f;
+    color: white;
+    font-size: 14px;
+    Padding: 5px 10px;
+    text-decoration: none;
+    width: calc(100% / 5);
+    text-align: center;
+}
+
+.banner {
+    Display: flex;
+    gap: 5px;
+    height: 75%;
+    margin: 12px 5px;
+}
+
+.banner .upperandlower {
+    width: 25%;
+}
+
+.banner .upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffc600;
+    height: 75%;
+
+}
+
+.banner .lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff00a8;
+    height: 25%;
+    font-weight: bold;
+
+}
+
+.banner .img {
+    width: 75%;
+    height: 100%;
+}
+
+#img {
+    width: 100%;
+    height: 100%;
+}
+
+.boxesandformulait {
+    display: flex;
+    width: 100%;
+    margin: 0 3px;
+}
+
+.boxesandformulait .boxes {
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 17px;
+}
+
+.boxesandformulait .boxes .Box {
+    border: 1px solid black;
+    width: calc(100% / 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    background-color: darkgray;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.boxesandformulait .boxes .Box:hover {
+    transform: translateY(-20px);
+}
+
+.name {
+    font-weight: bold;
+}
+
+.logo {
+    width: 100px;
+}
